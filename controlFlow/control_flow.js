@@ -46,3 +46,22 @@ switch (userType) {
 console.log("User Category:", userCategory);
 
 console.log("Authentication Status:", authenticationStatus);
+
+let serviceUserType = "Employee";
+let serviceCategory;
+
+switch (serviceUserType){
+    case "Employee":
+        serviceCategory = "Employee";
+        break;
+    case "Enrolled Member":
+        serviceCategory = "Enrolled Member";
+        break;
+    case "Subscriber":
+         serviceCategory = "Subscriber";
+         break;
+    case "Non-Subscriber":
+        serviceCategory = "Non-Subscriber";
+        break;
+}
+console.log ("You are eligible to the service for ",serviceCategory);
